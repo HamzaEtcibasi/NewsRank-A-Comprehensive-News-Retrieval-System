@@ -1,0 +1,248 @@
+C:\Users\ASUS\Desktop\neural-ranking-drmm-master\preprocessing>python create_train_test_folds.py ../data/qrels_train.txt ../data/qrels_test.txt
+
+python run_model.py first_run ../data/5-folds/qrels_train_fold_1.train ../data/qrelstrain_histogram_30.txt ../data/5-folds/qrels_train_fold_1.test ../data/qrelstest_histogram_30.txt
+
+
+python run_model.py first_run ../data/5-folds/qrels_train_fold_6.train ../data/qrelstrain_histogram_30.txt ../data/5-folds/qrels_train_fold_6.test ../data/qrelstest_histogram_30.txt
+
+OUTPUT:
+(ver3.6) C:\Users\ASUS\Desktop\neural-ranking-drmm-master\neural-ranking>python run_model.py first_run ../data/5-folds/qrels_fold_1.train ../data/qrel_histogram_30.txt ../data/5-folds/qrels_fold_5.test ../data/qrel_histogram_30.
+txt
+2024-06-04 21:55:36.021793: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-06-04 21:55:36.022161: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-06-04 21:55:41.551251: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-06-04 21:55:41.552633: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2024-06-04 21:55:41.554095: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2024-06-04 21:55:41.555499: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2024-06-04 21:55:41.556890: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2024-06-04 21:55:41.558279: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2024-06-04 21:55:41.559754: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2024-06-04 21:55:41.561198: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2024-06-04 21:55:41.561437: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1835] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. F
+ollow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-06-04 21:55:41.562136: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical 
+operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+loaded 7824 qrel pair entries
+loaded 16914 topic<->doc histogram entries
+idf_input: (15640, 5, 1)
+histogram_input: (15640, 5, 30)
+skipped_count: 0
+2024-06-04 21:55:43.184038: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+Epoch 1/100
+1564/1564 - 2s - loss: 0.9650
+Epoch 2/100
+1564/1564 - 2s - loss: 0.9106
+Epoch 3/100
+1564/1564 - 2s - loss: 0.9053
+Epoch 4/100
+1564/1564 - 2s - loss: 0.9016
+Epoch 5/100
+1564/1564 - 2s - loss: 0.8985
+Epoch 6/100
+1564/1564 - 2s - loss: 0.8952
+Epoch 7/100
+1564/1564 - 2s - loss: 0.8920
+Epoch 8/100
+1564/1564 - 2s - loss: 0.8894
+Epoch 9/100
+1564/1564 - 2s - loss: 0.8870
+Epoch 10/100
+1564/1564 - 2s - loss: 0.8851
+Epoch 11/100
+1564/1564 - 2s - loss: 0.8834
+Epoch 12/100
+1564/1564 - 2s - loss: 0.8818
+Epoch 13/100
+1564/1564 - 2s - loss: 0.8805
+Epoch 14/100
+1564/1564 - 2s - loss: 0.8794
+Epoch 15/100
+1564/1564 - 2s - loss: 0.8783
+Epoch 16/100
+1564/1564 - 2s - loss: 0.8775
+Epoch 17/100
+1564/1564 - 2s - loss: 0.8768
+Epoch 18/100
+1564/1564 - 2s - loss: 0.8761
+Epoch 19/100
+1564/1564 - 2s - loss: 0.8756
+Epoch 20/100
+1564/1564 - 2s - loss: 0.8752
+Epoch 21/100
+1564/1564 - 2s - loss: 0.8747
+Epoch 22/100
+1564/1564 - 2s - loss: 0.8743
+Epoch 23/100
+1564/1564 - 2s - loss: 0.8739
+Epoch 24/100
+1564/1564 - 2s - loss: 0.8735
+Epoch 25/100
+1564/1564 - 2s - loss: 0.8731
+Epoch 26/100
+1564/1564 - 2s - loss: 0.8726
+Epoch 27/100
+1564/1564 - 2s - loss: 0.8723
+Epoch 28/100
+1564/1564 - 2s - loss: 0.8720
+Epoch 29/100
+1564/1564 - 2s - loss: 0.8717
+Epoch 30/100
+1564/1564 - 2s - loss: 0.8714
+Epoch 31/100
+1564/1564 - 2s - loss: 0.8711
+Epoch 32/100
+1564/1564 - 2s - loss: 0.8708
+Epoch 33/100
+1564/1564 - 2s - loss: 0.8706
+Epoch 34/100
+1564/1564 - 2s - loss: 0.8704
+Epoch 35/100
+1564/1564 - 2s - loss: 0.8701
+Epoch 36/100
+1564/1564 - 2s - loss: 0.8700
+Epoch 37/100
+1564/1564 - 2s - loss: 0.8699
+Epoch 38/100
+1564/1564 - 2s - loss: 0.8697
+Epoch 39/100
+1564/1564 - 2s - loss: 0.8696
+Epoch 40/100
+1564/1564 - 2s - loss: 0.8694
+Epoch 41/100
+1564/1564 - 2s - loss: 0.8694
+Epoch 42/100
+1564/1564 - 2s - loss: 0.8693
+Epoch 43/100
+1564/1564 - 2s - loss: 0.8692
+Epoch 44/100
+1564/1564 - 2s - loss: 0.8691
+Epoch 45/100
+1564/1564 - 2s - loss: 0.8689
+Epoch 46/100
+1564/1564 - 2s - loss: 0.8690
+Epoch 47/100
+1564/1564 - 2s - loss: 0.8689
+Epoch 48/100
+1564/1564 - 2s - loss: 0.8687
+Epoch 49/100
+1564/1564 - 2s - loss: 0.8688
+Epoch 50/100
+1564/1564 - 2s - loss: 0.8687
+Epoch 51/100
+1564/1564 - 2s - loss: 0.8686
+Epoch 52/100
+1564/1564 - 2s - loss: 0.8685
+Epoch 53/100
+1564/1564 - 2s - loss: 0.8681
+Epoch 54/100
+1564/1564 - 2s - loss: 0.8680
+Epoch 55/100
+1564/1564 - 2s - loss: 0.8678
+Epoch 56/100
+1564/1564 - 2s - loss: 0.8679
+Epoch 57/100
+1564/1564 - 2s - loss: 0.8678
+Epoch 58/100
+1564/1564 - 2s - loss: 0.8678
+Epoch 59/100
+1564/1564 - 2s - loss: 0.8677
+Epoch 60/100
+1564/1564 - 2s - loss: 0.8677
+Epoch 61/100
+1564/1564 - 2s - loss: 0.8676
+Epoch 62/100
+1564/1564 - 2s - loss: 0.8676
+Epoch 63/100
+1564/1564 - 2s - loss: 0.8676
+Epoch 64/100
+1564/1564 - 2s - loss: 0.8676
+Epoch 65/100
+1564/1564 - 2s - loss: 0.8676
+Epoch 66/100
+1564/1564 - 2s - loss: 0.8677
+Epoch 67/100
+1564/1564 - 2s - loss: 0.8680
+Epoch 68/100
+1564/1564 - 2s - loss: 0.8690
+Epoch 69/100
+1564/1564 - 2s - loss: 0.8682
+Epoch 70/100
+1564/1564 - 2s - loss: 0.8678
+Epoch 71/100
+1564/1564 - 2s - loss: 0.8677
+Epoch 72/100
+1564/1564 - 2s - loss: 0.8675
+Epoch 73/100
+1564/1564 - 2s - loss: 0.8683
+Epoch 74/100
+1564/1564 - 2s - loss: 0.8678
+Epoch 75/100
+1564/1564 - 2s - loss: 0.8681
+Epoch 76/100
+1564/1564 - 2s - loss: 0.8675
+Epoch 77/100
+1564/1564 - 2s - loss: 0.8676
+Epoch 78/100
+1564/1564 - 2s - loss: 0.8674
+Epoch 79/100
+1564/1564 - 2s - loss: 0.8674
+Epoch 80/100
+1564/1564 - 2s - loss: 0.8673
+Epoch 81/100
+1564/1564 - 2s - loss: 0.8673
+Epoch 82/100
+1564/1564 - 2s - loss: 0.8670
+Epoch 83/100
+1564/1564 - 2s - loss: 0.8675
+Epoch 84/100
+1564/1564 - 2s - loss: 0.8672
+Epoch 85/100
+1564/1564 - 2s - loss: 0.8670
+Epoch 86/100
+1564/1564 - 2s - loss: 0.8672
+Epoch 87/100
+1564/1564 - 2s - loss: 0.8673
+Epoch 88/100
+1564/1564 - 2s - loss: 0.8672
+Epoch 89/100
+1564/1564 - 2s - loss: 0.8670
+Epoch 90/100
+1564/1564 - 2s - loss: 0.8671
+Epoch 91/100
+1564/1564 - 2s - loss: 0.8670
+Epoch 92/100
+1564/1564 - 2s - loss: 0.8690
+Epoch 93/100
+1564/1564 - 2s - loss: 0.8668
+Epoch 94/100
+1564/1564 - 2s - loss: 0.8684
+Epoch 95/100
+1564/1564 - 2s - loss: 0.8687
+Epoch 96/100
+1564/1564 - 2s - loss: 0.8668
+Epoch 97/100
+1564/1564 - 2s - loss: 0.8672
+Epoch 98/100
+1564/1564 - 2s - loss: 0.8668
+Epoch 99/100
+1564/1564 - 2s - loss: 0.8673
+Epoch 100/100
+1564/1564 - 2s - loss: 0.8671
+loaded 1896 prerank entries
+loaded 16914 topic<->doc histogram entries
+idf_input: (1896, 5, 1)
+histogram_input: (1896, 5, 30)
+skipped_count: 0
+
+
+
+it creates 
+C:\Users\ASUS\Desktop\neural-ranking-drmm-master\neural-ranking\result\first_run.result
+C:\Users\ASUS\Desktop\neural-ranking-drmm-master\neural-ranking\models\checkpoint
+C:\Users\ASUS\Desktop\neural-ranking-drmm-master\neural-ranking\models\first_run.weights.data-00000-of-00001
+C:\Users\ASUS\Desktop\neural-ranking-drmm-master\neural-ranking\models\first_run.weights.index
+
+
+C:\Users\ASUS\Desktop\neural-ranking-drmm-master\neural-ranking>python prepare_trec_eval.py result/first_run.result first_run_output ../data/qrels_test.txt

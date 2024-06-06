@@ -1,0 +1,2 @@
+model_checkpoint_path: "first_run.weights"
+all_model_checkpoint_paths: "first_run.weights"
